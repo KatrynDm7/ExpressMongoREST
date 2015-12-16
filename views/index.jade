@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1= title
+    h2 Create new user
+    form(name='user', method='post', role='form')
+        div(class='form-group')
+            input(type='text', name='email', class='form-control', required, placeholder='empty email')
+        div(class='form-group')
+            input(type='password', name='password', class='form-control', required, placeholder='empty password')
+            span *min 3 symbols
+        input(type='button', name='submit', value='Submit', class='submit-user btn btn-default')
+    div(class='user-status')
+
+    div
+        a(href='/users') Show all users

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    form(name='users', method='post', role='form')
+        each item in data
+            div(class='form-group')
+                p(class= item.id)
+                    input(type='text', name='email', class='form-control', value= item.email)
+                    a(href='#', class='update-user link') update
+                    a(href='#', class='delete-user link') delete
+    div(class='user-status')

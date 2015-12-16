@@ -1,0 +1,11 @@
+.user-status {
+    padding: 20px 0 0 0;
+}
+
+.link {
+    padding: 0 10px;
+}
+
+.link:last-child{
+    padding: 0;
+}
